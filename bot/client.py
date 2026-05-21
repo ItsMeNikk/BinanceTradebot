@@ -13,3 +13,7 @@ def init_client(api_key=None, api_secret=None):
 
     use_testnet = os.getenv("BINANCE_USE_TESTNET", "true").lower() == "true"
     return Client(api_key, api_secret, testnet=use_testnet)
+
+
+def close_client(client):
+    pass
