@@ -157,7 +157,6 @@ python cli.py
 ```bash
 python cli.py market BTCUSDT BUY 0.01
 ```
-
 ---
 
 ### LIMIT Order
@@ -165,7 +164,6 @@ python cli.py market BTCUSDT BUY 0.01
 ```bash
 python cli.py limit BTCUSDT SELL 0.05 50000
 ```
-
 ---
 
 ### Check Order Status
@@ -173,7 +171,6 @@ python cli.py limit BTCUSDT SELL 0.05 50000
 ```bash
 python cli.py status BTCUSDT 12345678
 ```
-
 ---
 
 ### Cancel Order
@@ -181,7 +178,6 @@ python cli.py status BTCUSDT 12345678
 ```bash
 python cli.py cancel BTCUSDT 12345678
 ```
-
 ---
 
 ### Account Information
@@ -189,7 +185,6 @@ python cli.py cancel BTCUSDT 12345678
 ```bash
 python cli.py account
 ```
-
 ---
 
 ### Balance Information
@@ -229,17 +224,6 @@ The application handles:
 - argparse
 - logging
 - python-dotenv
-
----
-
-## Assumptions
-
-- Only Binance Futures Testnet is supported
-- Only USDT-M Futures trading is implemented
-- API keys are stored securely using environment variables
-- Internet connection is required
-
----
 
 ## Disclaimer
 
