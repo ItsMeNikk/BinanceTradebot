@@ -2,33 +2,23 @@
 
 A simple Binance Futures Testnet trading bot built with Python.
 
-> For educational purposes only. Do not use with real funds.
-
----
+> Educational project — do not use with real funds.
 
 ## Features
 
-- Place MARKET orders
-- Place LIMIT orders
+- MARKET and LIMIT orders
 - BUY and SELL support
-- Interactive CLI menu
+- Interactive CLI mode
 - Direct CLI commands
 - Order status checking
-- Cancel open orders
-- Account information
-- Balance checking
+- Order cancellation
+- Account and balance info
 - Input validation
-- Error handling
-- Logging support
-
----
+- Logging and error handling
 
 ## Screenshot
 
 ![Trading Bot Screenshot](screenshots/Tradebot.png)
-
-
----
 
 ## Requirements
 
@@ -36,20 +26,16 @@ A simple Binance Futures Testnet trading bot built with Python.
 - Binance Futures Testnet account
 - Binance Testnet API keys
 
----
-
 ## Setup
 
-### 1. Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/ItsMeNikk/BinanceTradebot.git
 cd BinanceTradebot
 ```
 
----
-
-### 2. Create Virtual Environment
+### Create Virtual Environment
 
 #### Windows
 
@@ -65,19 +51,13 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
----
-
-### 3. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-### 4. Configure Environment Variables
-
-Copy the example environment file:
+### Configure Environment Variables
 
 #### Windows
 
@@ -91,40 +71,24 @@ copy .env.example .env
 cp .env.example .env
 ```
 
-Then add your Binance Futures Testnet API credentials inside `.env`.
-
-Example:
+Add your Binance Testnet API keys inside `.env`:
 
 ```env
 BINANCE_API_KEY=your_api_key
 BINANCE_SECRET_KEY=your_secret_key
 ```
 
----
-
 ## Binance Futures Testnet
-
-Create your Binance Futures Testnet account and API keys here:
 
 https://testnet.binancefuture.com
 
----
+## Run Application
 
-## Run the Application
+### Interactive Mode
 
-The application supports both interactive mode and direct CLI commands.
-
----
-
-## Interactive Menu Mode
-
-
+```bash
 python cli.py
-
-
----
-
-## CLI Commands
+```
 
 ### MARKET Order
 
@@ -164,29 +128,15 @@ python cli.py balance
 
 ## Logging
 
-All API requests, responses, and errors are logged inside:
+Logs are stored in:
 
 ```text
 logs/trading_bot.log
 ```
 
----
-
-## Error Handling
-
-The application handles:
-
-- Invalid user inputs
-- Binance API exceptions
-- Network failures
-- Missing environment variables
-- Invalid symbols/orders
-
----
-
 ## Technologies Used
 
-- Python 3
+- Python
 - python-binance
 - argparse
 - logging
@@ -196,13 +146,8 @@ The application handles:
 
 This project is for educational and assessment purposes only.
 
-Trading cryptocurrencies involves financial risk. Do not use this project with real funds without proper security and testing.
-
----
-
 ## Author
 
 Nikhil
 
-GitHub:
-https://github.com/ItsMeNikk
+GitHub: https://github.com/ItsMeNikk
