@@ -1,6 +1,6 @@
 # binancetradebot
 
-A simple Binance Futures Testnet trading bot CLI in Python.
+A simple Binance Futures Testnet trading bot in Python.
 
 > For educational use only. Do not use with real funds.
 
@@ -16,17 +16,23 @@ cp .env.example .env            # then add your testnet API keys
 
 ## Run
 
+The bot supports two modes: interactive menu and direct CLI commands.
+
+### Interactive Menu
+
 ```bash
-python cli.py --help
+python cli.py
 ```
 
-## Commands
+### CLI Commands
 
-```bash
-python cli.py market --symbol BTCUSDT --side BUY --quantity 0.01
-python cli.py limit  --symbol BTCUSDT --side SELL --quantity 0.05 --price 50000
-python cli.py status --symbol BTCUSDT --order-id 12345678
-python cli.py cancel --symbol BTCUSDT --order-id 12345678
+```
+python cli.py market BTCUSDT BUY 0.01
+python cli.py limit  BTCUSDT SELL 0.05 50000
+python cli.py status BTCUSDT 12345678
+python cli.py cancel BTCUSDT 12345678
 python cli.py account
+python cli.py balance
 ```
-Logs are saved to `logs/trading_bot.log`.
+
+Run `python cli.py` (no arguments) to launch the interactive menu instead.
