@@ -29,13 +29,4 @@ python cli.py status --symbol BTCUSDT --order-id 12345678
 python cli.py cancel --symbol BTCUSDT --order-id 12345678
 python cli.py account
 ```
-
-## What to implement
-
-| File | Functions | Status |
-|------|-----------|--------|
-| `bot/client.py` | `init_client()` | Done |
-| `bot/orders.py` | `place_market_order()`, `place_limit_order()`, etc. | Done |
-| `bot/validators.py` | `validate_quantity()`, `validate_price()` | Done |
-
 Logs are saved to `logs/trading_bot.log`.
