@@ -27,32 +27,6 @@ A simple Binance Futures Testnet trading bot built with Python.
 
 ![Trading Bot Screenshot](screenshots/Tradebot.png)
 
----
-
-## Project Structure
-
-```text
-binancetradebot/
-│
-├── bot/
-│   ├── __init__.py
-│   ├── client.py
-│   ├── orders.py
-│   ├── validators.py
-│   └── logging_config.py
-│
-├── logs/
-│   └── trading_bot.log
-│
-├── screenshots/
-│   └── Tradebot.png
-│
-├── cli.py
-├── .env.example
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
 
 ---
 
@@ -144,9 +118,9 @@ The application supports both interactive mode and direct CLI commands.
 
 ## Interactive Menu Mode
 
-```bash
+
 python cli.py
-```
+
 
 ---
 
@@ -157,43 +131,36 @@ python cli.py
 ```bash
 python cli.py market BTCUSDT BUY 0.01
 ```
----
 
 ### LIMIT Order
 
 ```bash
 python cli.py limit BTCUSDT SELL 0.05 50000
 ```
----
 
 ### Check Order Status
 
 ```bash
 python cli.py status BTCUSDT 12345678
 ```
----
 
 ### Cancel Order
 
 ```bash
 python cli.py cancel BTCUSDT 12345678
 ```
----
 
 ### Account Information
 
 ```bash
 python cli.py account
 ```
----
 
 ### Balance Information
 
 ```bash
 python cli.py balance
 ```
-
----
 
 ## Logging
 
